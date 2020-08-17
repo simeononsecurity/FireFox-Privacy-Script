@@ -12,13 +12,13 @@ $firefox32 = "C:\Program Files (x86)\Mozilla Firefox"
 Write-Output "Installing Firefox Configurations - Please Wait."
 Write-Output "Window will close after install is complete"
 If (Test-Path -Path $firefox64){
-    Copy-Item -Path .\Files\"FireFox Configuration Files"\* -Destination $firefox64 -Force -Recurse
+    Copy-Item -Path .\Files\* -Destination $firefox64 -Force -Recurse
     Write-Host "Firefox 64-Bit Configurations Installed"
 }Else {
     Write-Host "FireFox 64-Bit Is Not Installed"
 }
 If (Test-Path -Path $firefox32){
-    Copy-Item -Path .\Files\"FireFox Configuration Files"\* -Destination $firefox32 -Force -Recurse
+    Copy-Item -Path .\Files\* -Destination $firefox32 -Force -Recurse
     Write-Host "Firefox 32-Bit Configurations Installed"
 }Else {
     Write-Host "FireFox 32-Bit Is Not Installed"
