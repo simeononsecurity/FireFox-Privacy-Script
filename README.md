@@ -1,18 +1,20 @@
-# FireFox STIG Script
+# FireFox Privacy Script
 
-The [Firefox V4R29](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MOZ_FireFox_V4R29_STIG.zip) isn't the easiest of STIGs to apply. 
-This script will implement most of the required FireFox policies. 
-V-15773	
-This script will bring you up to 100% compliance minus 2 checks. You must manually check Vul ID: **V-15770** and **V-15773**
+**Work in progress**
+
+Organizations like [PrivacyTools.io](https://www.privacytools.io/browsers/#about_config) and [ffprofile](https://ffprofile.com/) have suggested changes to make FireFox more secure and private.
+These changes cover suggested browser extentions, blocking telemetry, disabling 3rd-party cookies, disabling trackers, etc.
+
+This script will take the pregenerated FireFox configuration files and install them in the proper directories on a Windows system.
 
 ## Download the required files
 
-Download the required files from the [GitHub Repository](https://github.com/simeononsecurity/FireFox-STIG-Script)
+Download the required files from the [GitHub Repository](https://github.com/simeononsecurity/FireFox-Privacy-Script)
 
 ## How to run the script
 
 
 **The script may be lauched from the extracted GitHub download like this:**
 ```
-.\sos-firefoxstig.ps1
+.\sos-firefoxprivacy.ps1
 ```
