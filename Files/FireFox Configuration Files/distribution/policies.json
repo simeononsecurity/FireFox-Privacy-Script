@@ -1,0 +1,44 @@
+{
+  "policies": {
+    "NewTabPage": false,
+    "DisplayMenuBar": true,
+    "DisableBuiltinPDFViewer": true,
+    "ExtensionSettings": {
+      "uBlock0@raymondhill.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "https-everywhere@eff.org": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/https-everywhere/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "CanvasBlocker@kkapsner.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/3488342/canvasblocker-1.0-an+fx.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "jid1-MnnxcxisBPnSXQ@jetpack": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "uMatrix@raymondhill.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/umatrix/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "CookieAutoDelete@kennydo.com": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/cookie-autodelete/latest.xpi",
+        "installation_mode": "normal_installed"
+      }
+    },
+    "NetworkPrediction": false,
+    "CaptivePortal": false,
+    "DNSOverHTTPS": {
+      "Enabled": false
+    },
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DisablePocket": true,
+    "DisableFirefoxScreenshots": true,
+    "DisableFormHistory": true,
+    "DisableAppUpdate": true
+  }
+}
