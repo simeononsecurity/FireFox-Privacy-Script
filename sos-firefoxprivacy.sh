@@ -7,4 +7,4 @@ then
 	exit
 fi
 
-cp -R ./Files/* /lib/user/
+cp -R ./Files/* /lib/firefox/
