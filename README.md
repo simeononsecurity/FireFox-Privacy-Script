@@ -11,7 +11,15 @@ Download the required files from the [GitHub Repository](https://github.com/sime
 
 ## How to run the script
 
-**The script may be lauched from the extracted GitHub download like this:**
-```
+**The script may be lauched from the extracted [GitHub download](https://github.com/simeononsecurity/FireFox-Privacy-Script/archive/master.zip) like this:**
+
+Windows:
+```powershell
 .\sos-firefoxprivacy.ps1
+```
+
+Linux:
+```bash
+sudo chmod +x ./sos-firefoxprivacy.sh
+sudo bash ./sos-firefoxprivacy.sh
 ```
