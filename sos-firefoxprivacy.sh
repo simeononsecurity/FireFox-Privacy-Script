@@ -9,6 +9,6 @@ fi
 
 mkdir /lib/firefox/browser/defaults/preferences/
 mkdir /lib/firefox/distribution/extensions/
-cp -R ./Files/browser/defaults/preferences/* /lib/firefox/browser/defaults/preferences/*
-cp -R ./Files/distribution/extensions/* /lib/firefox/distribution/extensions/*
+cp ./Files/browser/defaults/preferences/* /lib/firefox/browser/defaults/preferences/*
+cp ./Files/distribution/extensions/* /lib/firefox/distribution/extensions/*
 cp ./Files/browser/distribution/*.json /lib/firefox/distribution/*
