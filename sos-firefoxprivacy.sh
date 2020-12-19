@@ -7,8 +7,8 @@ then
 	exit
 fi
 
-mkdir /lib/firefox/browser/defaults/preferences/
-mkdir /lib/firefox/distribution/extensions/
+mkdir -p /lib/firefox/browser/defaults/preferences/
+mkdir -p /lib/firefox/distribution/extensions/
 cp ./Files/browser/defaults/preferences/* /lib/firefox/browser/defaults/preferences/*
 cp ./Files/distribution/extensions/* /lib/firefox/distribution/extensions/*
-cp ./Files/browser/distribution/*.json /lib/firefox/distribution/*
+cp ./Files/browser/distribution/* /lib/firefox/distribution/*
