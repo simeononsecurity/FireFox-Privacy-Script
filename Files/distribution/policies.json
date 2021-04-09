@@ -1,7 +1,7 @@
 {
   "policies": {
     "NewTabPage": false,
-    "DisplayMenuBar": true,
+    "DisplayMenuBar": false,
     "DisableBuiltinPDFViewer": true,
     "ExtensionSettings": {
       "uBlock0@raymondhill.net": {
