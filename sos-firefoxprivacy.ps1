@@ -8,6 +8,10 @@ $ErrorActionPreference= 'silentlycontinue'
 #Require elivation for script run
 #Requires -RunAsAdministrator
 
+#Set Directory to PSScriptRoot
+if ((Get-Location).Path -NE $PSScriptRoot) { Set-Location $PSScriptRoot }
+
+
 $firefox64 = "C:\Program Files\Mozilla Firefox"
 $firefox32 = "C:\Program Files (x86)\Mozilla Firefox"
 
