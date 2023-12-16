@@ -13,8 +13,9 @@ Download the required files from the [GitHub Repository](https://github.com/sime
 
 **The script may be lauched from the extracted [GitHub download](https://github.com/simeononsecurity/FireFox-Privacy-Script/archive/master.zip) like this:**
 
-Windows:
+Windows PowerShell:
 ```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\sos-firefoxprivacy.ps1
 ```
 
