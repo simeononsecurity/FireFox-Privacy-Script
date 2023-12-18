@@ -15,8 +15,8 @@ Download the required files from the [GitHub Repository](https://github.com/sime
 
 Windows PowerShell:
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\sos-firefoxprivacy.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Forcw
+powershell -ExecutionPolicy Bypass -File "C:\Path\To\Your\sos-firefoxprivacy.ps1"
 ```
 
 Linux:
