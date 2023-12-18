@@ -3,7 +3,7 @@
 #https://www.itsupportguides.com/knowledge-base/tech-tips-tricks/how-to-customise-firefox-installs-using-mozilla-cfg/
 
 #Continue on error
-$ErrorActionPreference= 'silentlycontinue'
+$ErrorActionPreference = 'silentlycontinue'
 
 #Require elivation for script run
 #Requires -RunAsAdministrator
