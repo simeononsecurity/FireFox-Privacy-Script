@@ -23,5 +23,5 @@ mkdir -p "$distribution_dir"
 
 # Copy files to the directories
 cp ./Files/browser/defaults/preferences/* "$preferences_dir"
-cp ./Files/browser/distribution/* "$distribution_dir"
+cp ./Files/distribution/* "$distribution_dir"
 cp ./Files/distribution/extensions/* "$extensions_dir"
