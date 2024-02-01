@@ -12,6 +12,7 @@ if [ $UID -ne 0 ]; then
 fi
 
 # Define the directories
+config_dir="/lib/firefox/"
 preferences_dir="/lib/firefox/browser/defaults/preferences/"
 distribution_dir="/lib/firefox/distribution/"
 extensions_dir="/lib/firefox/distribution/extensions/"
@@ -22,6 +23,7 @@ mkdir -p "$extensions_dir"
 mkdir -p "$distribution_dir"
 
 # Copy files to the directories
+cp ./Files/mozilla.cfg* "$config_dir"
 cp ./Files/browser/defaults/preferences/* "$preferences_dir"
 cp ./Files/distribution/* "$distribution_dir"
 cp ./Files/distribution/extensions/* "$extensions_dir"
