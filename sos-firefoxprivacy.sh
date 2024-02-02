@@ -29,6 +29,6 @@ mkdir -p "$distribution_dir"
 
 # Copy files to the directories
 cp ./Files/mozilla.cfg* "$config_dir"
-cp ./Files/browser/defaults/preferences/* "$preferences_dir"
-cp ./Files/distribution/* "$distribution_dir"
-cp ./Files/distribution/extensions/* "$extensions_dir"
+cp -r ./Files/browser/defaults/preferences/* "$preferences_dir"
+cp -r ./Files/distribution/* "$distribution_dir"
+cp -r ./Files/distribution/extensions/* "$extensions_dir"
