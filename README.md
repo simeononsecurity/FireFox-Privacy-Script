@@ -3,7 +3,7 @@
 Organizations like [PrivacyTools.io](https://www.privacytools.io/browsers/#about_config) and [ffprofile](https://ffprofile.com/) have suggested changes to make FireFox more secure and private.
 These changes cover suggested browser extentions, blocking telemetry, disabling 3rd-party cookies, disabling trackers, etc.
 
-This script will take the pregenerated FireFox configuration files and install them in the proper directories on a Windows system.
+This script will take the pregenerated FireFox configuration files and install them in the proper directories on either Windows or Linux systems.
 
 ## Download the required files
 
