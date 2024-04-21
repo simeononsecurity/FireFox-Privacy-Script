@@ -19,7 +19,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
 powershell -ExecutionPolicy Bypass -File "C:\Path\To\Your\sos-firefoxprivacy.ps1"
 ```
 
-Linux:
+Linux and MacOS:
 ```bash
 sudo chmod +x ./sos-firefoxprivacy.sh
 sudo bash ./sos-firefoxprivacy.sh
