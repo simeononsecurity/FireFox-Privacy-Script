@@ -85,11 +85,18 @@ if [ "$(uname -s)" = "Darwin" ] ; then
     defaults import /Library/Preferences/org.mozilla.firefox ./Files/distribution/org.mozilla.firefox.plist
 
 else
-    # For Linux - check for /lib or /lib64
-    if [ -d "/lib64/firefox" ]; then
-        base_dir="/lib64/firefox"
-    else
-        base_dir="/lib/firefox"
+    # For Linux - check for directories in order of preference
+    for dir in "/usr/lib64/firefox" "/usr/lib/firefox" "/lib64/firefox" "/lib/firefox"; do
+        if [ -d "$dir" ]; then
+            base_dir="$dir"
+            break
+        fi
+    done
+
+    # Exit if no valid Firefox directory was found
+    if [ -z "$base_dir" ]; then
+        echo "Firefox directory not found in /usr/lib64, /usr/lib, /lib64, or /lib."
+        exit 1
     fi
 
     config_dir="$base_dir/"
