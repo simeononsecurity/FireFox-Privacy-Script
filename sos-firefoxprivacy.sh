@@ -85,11 +85,17 @@ if [ "$(uname -s)" = "Darwin" ] ; then
     defaults import /Library/Preferences/org.mozilla.firefox ./Files/distribution/org.mozilla.firefox.plist
 
 else
-    # For Linux
-    config_dir="/lib/firefox/"
-    preferences_dir="/lib/firefox/browser/defaults/preferences/"
-    extensions_dir="/lib/firefox/distribution/extensions/"
-    distribution_dir="/lib/firefox/distribution/"
+    # For Linux - check for /lib or /lib64
+    if [ -d "/lib64/firefox" ]; then
+        base_dir="/lib64/firefox"
+    else
+        base_dir="/lib/firefox"
+    fi
+
+    config_dir="$base_dir/"
+    preferences_dir="$base_dir/browser/defaults/preferences/"
+    extensions_dir="$base_dir/distribution/extensions/"
+    distribution_dir="$base_dir/distribution/"
 
     checkInstall
 
