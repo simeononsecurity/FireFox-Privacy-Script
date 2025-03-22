@@ -86,7 +86,7 @@ if [ "$(uname -s)" = "Darwin" ] ; then
 
 else
     # For Linux - check for directories in order of preference
-    for dir in "/usr/lib64/firefox" "/usr/lib/firefox" "/lib64/firefox" "/lib/firefox"; do
+    for dir in "/usr/lib64/firefox" "/usr/lib/firefox" "/lib64/firefox" "/lib/firefox" "/usr/lib64/firefox-esr" "/usr/lib/firefox-esr" "/lib64/firefox-esr" "/lib/firefox-esr"; do
         if [ -d "$dir" ]; then
             base_dir="$dir"
             break
