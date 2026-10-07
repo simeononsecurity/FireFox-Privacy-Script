@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Firefox AutoConfig requires LF even in Windows checkouts.
+Files/browser/defaults/preferences/autoconfig.js text eol=lf
+Files/mozilla.cfg text eol=lf
