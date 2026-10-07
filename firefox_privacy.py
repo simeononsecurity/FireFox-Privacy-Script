@@ -80,7 +80,7 @@ def payload(source, platform):
             continue
         if platform == 'macos' and relative.parts[:3] == ('browser', 'defaults', 'preferences'):
             relative = Path('defaults/pref') / relative.name
-        files[str(relative)] = path
+        files[relative.as_posix()] = path
     if 'mozilla.cfg' not in files or 'distribution/policies.json' not in files:
         raise ValueError('Required Firefox configuration files are missing')
     json.loads(files['distribution/policies.json'].read_text(encoding='utf-8'))
