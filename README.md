@@ -37,7 +37,7 @@ Omit `--firefox-dir` for automatic discovery when exactly one supported installa
 
 The installer recursively copies the payload. Existing files are backed up before replacement. Unrelated files stay in place. A manifest and original copies live in `.sos-privacy-state` inside the selected installation. Updates retain the first original backup. Keep this directory until restoration is complete.
 
-The macOS layout uses `distribution/policies.json` and `defaults/pref`. This version does not import a global `org.mozilla.firefox.plist` or copy extensions into Firefox's built-in features directory.
+All platforms use `distribution/policies.json` and `defaults/pref`, following [Mozilla AutoConfig guidance](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig). AutoConfig files retain LF line endings in Windows checkouts. This version does not import a global `org.mozilla.firefox.plist` or copy extensions into Firefox's built-in features directory.
 
 ## Restore
 

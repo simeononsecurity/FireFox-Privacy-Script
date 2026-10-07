@@ -30,7 +30,7 @@ class InstallerTests(unittest.TestCase):
             with self.subTest(platform=platform):
                 self.install(platform)
                 self.assertEqual((self.root/'distribution/extensions/one.xpi').read_text(), 'extension')
-                preference = 'defaults/pref/autoconfig.js' if platform == 'macos' else 'browser/defaults/preferences/autoconfig.js'
+                preference = 'defaults/pref/autoconfig.js'
                 self.assertTrue((self.root/preference).exists())
                 i.uninstall(self.root)
                 self.assertFalse((self.root/'mozilla.cfg').exists())

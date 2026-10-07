@@ -78,7 +78,7 @@ def payload(source, platform):
         # Use Firefox enterprise policies on every platform. Do not alter global macOS plists.
         if relative.suffix == '.plist':
             continue
-        if platform == 'macos' and relative.parts[:3] == ('browser', 'defaults', 'preferences'):
+        if relative.parts[:3] == ('browser', 'defaults', 'preferences'):
             relative = Path('defaults/pref') / relative.name
         files[relative.as_posix()] = path
     if 'mozilla.cfg' not in files or 'distribution/policies.json' not in files:
